@@ -7,13 +7,14 @@ body {
     padding: 20px;
 }
 
-/* Section blocks */
+/* Section blocks (1st styled div) */
 .section-block {
     background: #ffd3ae;
     padding: 20px;
     margin: 20px 0;
     border-radius: 12px;
     border: 2px solid #d13939;
+    position: relative; /* positioning added */
 }
 
 /* Image styling */
@@ -32,4 +33,37 @@ h1, h2 {
 a {
     color: #8b0808;
     font-weight: bold;
+}
+
+/* Extra styled div #2 */
+.highlight-box {
+    background-color: #ffe0cc;
+    padding: 15px;
+    border-left: 6px solid #d13939;
+    margin: 20px 0;
+}
+
+/* Extra styled div #3 */
+.center-box {
+    background-color: #fff0e0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Responsive video wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
