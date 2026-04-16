@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chinese Food</title>
+    <link rel="stylesheet" href="css/chinese-food-style.css">
+
+    <style>
+        /* Top-right link styling */
+        .top-right-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.1rem;
+        }
+
+        .top-right-link a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        .top-right-link a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            position: relative; /* Needed so the top-right link positions correctly */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="top">
+        <!-- NEW: Professional Page link in top-right -->
+        <div class="top-right-link">
+            <a href="home.html">Professional Page</a>
+        </div>
+
+        <h1>Chinese Cuisine: A Journey For Your Tastebuds</h1>
+    </header>
+
+    <!-- First content block -->
+    <div class="section-block">
+        <h2>How to start making Chinese food</h2>
+        <p>Authentic Chinese food is a hit! If your wanting a new addition to your meals, try doing this:</p>
+
+        <ol>
+            <li>Pick a Region in China
+                <ul>
+                    <li>Sichuan</li>
+                    <li>Cantonese</li>
+                    <li>Hunan</li>
+                </ul>
+            </li>
+            <li>Find a Popular Dish</li>
+            <li>Try it out</li>
+        </ol>
+    </div>
+
+    <!-- Second content block -->
+    <div class="section-block">
+        <h2>Delicious Dish Spotlight</h2>
+        <img src="assets/img/chinese-hot-pot-at-home.webp" alt="Chinese dish" class="food-img">
+        <p>This is one of my favorite dishes — Hot Pot</p>
+    </div>
+
+<!-- Extra styled div #3 -->
+<div class="center-box">
+    <p>Click the video below to learn how to make dumplings</p>
+</div>
+
+   <!-- Third content block -->
+<div class="section-block">
+  <h2>Featured Video</h2>
+
+  <div class="video-wrapper">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/VWm53wI_734?si=3UjGO7v3w2W7YntE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+    <h2>Interactive Tableau Visualization</h2>
+    <p>Below is a Tableau visualization about restuarants in the USA that serve Asian food. Look at how many serve Chinese food!</p>
+
+    <div class="tableauPlaceholder" id="viz1776277359065" style="position: relative;">
+        <noscript>
+            <a href="#">
+                <img 
+                    alt="Dashboard 1"
+                    src="https://public.tableau.com/static/images/Re/RestuarantsintheUSservingAsianfood/Dashboard1/1_rss.png"
+                    style="border: none;"
+                />
+            </a>
+        </noscript>
+
+<div class="highlight-box">
+    <p>Thanks for making it to the bottom of the page. I hope you enjoyed!</p>
+</div>
+
+        <object class="tableauViz" style="display: none;">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="RestuarantsintheUSservingAsianfood/Dashboard1" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param name="static_image" value="https://public.tableau.com/static/images/Re/RestuarantsintheUSservingAsianfood/Dashboard1/1.png" />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+        </object>
+    </div>
+
+    <!-- Back to top link BELOW Tableau -->
+    <p style="margin-top: 20px;">
+        <a href="#top">Back to top</a>
+    </p>
+
+    <script type="text/javascript">
+        var divElement = document.getElementById("viz1776277359065");
+        var vizElement = divElement.getElementsByTagName("object")[0];
+
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = "1000px";
+            vizElement.style.height = "827px";
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = "1000px";
+            vizElement.style.height = "827px";
+        } else {
+            vizElement.style.width = "100%";
+            vizElement.style.height = "1777px";
+        }
+
+        var scriptElement = document.createElement("script");
+        scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+</body>
+</html>
